@@ -2,17 +2,17 @@ import { useState } from 'react';
 
 function Counter() {
    const[x, setX] =useState(0)
-   const[y, setY] =useState(0)
+//    const[y, setY] =useState(0)
     return(
         <>
-        count X:{x}
+        count X:{x} is {(x%2==0)? 'Even' : 'odd'}
         <button onClick={()=> setX(x+1)}>inc</button>
         <button onClick={()=> setX(x-1)}>dec</button>
-        <br/>
+        {/* <br/> */}
 
-        count Y:{y}
+        {/* count Y:{y}
         <button onClick={()=> setY(y+1)}>inc</button>
-        <button onClick={()=> setY(y-1)}>dec</button>
+        <button onClick={()=> setY(y-1)}>dec</button> */}
         </>
     )
 }
